@@ -1,7 +1,7 @@
 // キャッシュファイルの指定
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
-    'pwa-test-organization-account.github.io/pwa-test/',
+    '/pwa-test-organization-account.github.io/pwa-test/',
 ];
 
 // インストール処理
