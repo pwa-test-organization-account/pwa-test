@@ -6,6 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TAP10</title>
 <link rel="stylesheet" type="text/css" href="app.css">
+<!-- ウェブアプリマニフェストの読み込み -->
+<link rel="manifest" href="manifest.json">
+<!-- ServiceWorkerの登録 -->
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then((reg) => {
+        console.log('Service worker registered.', reg);
+      });
+}
+</script>
 </head>
 <body>
 
