@@ -85,7 +85,10 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
     console.log('Service Worker is registered', swReg);
 
     swRegistration = swReg;
-
+    swRegistration.onupdatefound = function() {
+      console.log('アップデートがあります！');
+      swRegistration.update();
+    }
 
 
     navigator.serviceWorker.register('service_worker.js')
